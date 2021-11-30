@@ -6,4 +6,5 @@ This repo contains tutorials I follow and projects done with Solidity
 - [Ethereum and Solidity: The Complete Developer's Guide](https://www.udemy.com/course/ethereum-and-solidity-the-complete-developers-guide)
 
 ## Tools
-- [Remix](http://remix.ethereum.org)
+- [Remix](http://remix.ethereum.org): Integrated Development Environment for writing, deploying, and testing contracts
+- [Ganache](https://www.trufflesuite.com/docs/ganache/quickstart): Allows you to spin up a private blockchain for testing
