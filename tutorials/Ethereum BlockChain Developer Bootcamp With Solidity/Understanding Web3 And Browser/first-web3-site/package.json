@@ -1,5 +1,5 @@
 {
-  "name": "web3-contract",
+  "name": "first-web3",
   "version": "1.0.0",
   "description": "Interacting with the blockchain from your DApp",
   "main": "index.js",
@@ -9,6 +9,13 @@
   "author": "Fanan Dala",
   "license": "MIT",
   "dependencies": {
-    "web3": "^1.6.1"
+    "web3": "^1.6.1",
+    "web3.js-browser": "^0.2.0"
+  },
+  "devDependencies": {
+    "truffle": "^5.4.22",
+    "chai": "^4.3.4",
+    "ethereum-waffle": "^3.4.0",
+    "ethers": "^5.5.1"
   }
 }
