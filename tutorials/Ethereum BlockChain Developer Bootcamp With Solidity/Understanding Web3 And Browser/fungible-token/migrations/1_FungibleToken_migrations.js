@@ -1,4 +1,4 @@
-const FungibleToken = artifacts.require("FungibleToken");
+const FungibleToken = artifacts.require('FungibleToken');
 
 module.exports = async function (deployer, network, accounts) {
   // deployment steps
