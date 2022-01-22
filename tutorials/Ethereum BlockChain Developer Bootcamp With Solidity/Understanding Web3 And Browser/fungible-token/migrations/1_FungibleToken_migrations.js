@@ -1,8 +1,11 @@
 const FungibleToken = artifacts.require('FungibleToken');
 const FungibleTokenSale = artifacts.require('FungibleTokenSale');
+require('dotenv').config({
+  path: '../.env',
+});
 
 module.exports = async function (deployer, network, accounts) {
-  const numberOfTokensToCreate = 1000;
+  const numberOfTokensToCreate = process.env.FUNGIBLE_TOKENS_TO_CREATE;
   await deployer.deploy(FungibleToken, numberOfTokensToCreate);
 
   const rateInWei = 1;

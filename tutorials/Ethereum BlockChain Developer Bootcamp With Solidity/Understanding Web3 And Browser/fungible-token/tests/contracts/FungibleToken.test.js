@@ -1,3 +1,7 @@
+require('dotenv').config({
+    path: '../../.env',
+});
+
 const chai = require('chai');
 const chaiBN = require('chai-bn');
 const chaiAsPromised = require('chai-as-promised');
@@ -14,7 +18,7 @@ contract('Token Test', async (accounts) => {
     const [deployerAccount, recipientAccount1,] = accounts;
 
     beforeEach(async () => {
-        const numberOfTokensToDeploy = 1000;
+        const numberOfTokensToDeploy = process.env.FUNGIBLE_TOKENS_TO_CREATE;
         this.tokenContract = await Token.new(numberOfTokensToDeploy);
     });
 
