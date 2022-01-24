@@ -79,6 +79,12 @@ export default {
     this.tokenContract.methods.balanceOf("0x877fdbd2499ad917619909d9082c417d791d4436").call().then(response => {
       console.log(`User token balance: ${response}`);
     });
+
+    this.web3.eth.getBalance("0x877fdbd2499ad917619909d9082c417d791d4436").then(response => {
+      const balance = response;
+      console.log(`Wallet Balance: ${this.web3.utils.fromWei(balance, 'ether')}`);
+    });
+    
   },
   methods: {
     async connectWallet() {
