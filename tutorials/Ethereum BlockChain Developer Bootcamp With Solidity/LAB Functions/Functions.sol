@@ -49,5 +49,8 @@ contract Functions {
     // public - can be called by itself and child contracts
     // private - can only be called by the contract itself
     // external - can be called from other contracts and transactions but not from the contract itself
-    // internal - can only be called from within the contract and its child contracts. It cannot be invoked by transactions
+    // internal - can only be called from within the contract and its child contracts. It cannot be invoked by transactions or other contracts
+    // view - does not change the state of the chain and only returns data
+    // virtual - means the function can be inherited and overriten and the function can be left blank (don't have to be implemented by the parent function).
+    // override - means the function was inherited from a parent contract and is overriding the parent's function.
 }
